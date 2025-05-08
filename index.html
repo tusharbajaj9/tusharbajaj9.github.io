@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tushar Bajaj | Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      background: #ffffff;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      justify-content: space-between;
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .intro {
+      flex: 1;
+    }
+    .intro h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .intro h2 {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .intro p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+    .photo {
+      flex: 0 0 auto;
+    }
+    .photo img {
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    }
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 0;
+      flex-wrap: wrap;
+    }
+    .circle-button {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .circle-button:hover {
+      transform: scale(1.1);
+    }
+    .skills { background-color: #ffb74d; }
+    .certifications { background-color: #81c784; }
+    .resume { background-color: #64b5f6; }
+    .contact { background-color: #ba68c8; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Tushar Bajaj</div>
+    <nav>
+      <a href="skills.html">Skills</a>
+      <a href="certifications.html">Certifications</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="photo">
+      <img src="profile.jpg" alt="Tushar Bajaj"/>
+    </div>
+    <div class="intro">
+      <h1>Hi, I'm Tushar Bajaj</h1>
+      <h2>Data & BI Analyst | SQL • Tableau • Power BI • Excel • Python</h2>
+      <p>
+        I am a results-oriented Data and Business Intelligence Analyst with expertise in SQL, Excel, Tableau, and Power BI.
+        With a strong foundation in data analytics and a background in financial, operational, and supply chain reporting,
+        I specialize in turning complex data into clear, actionable strategies. My experience includes building
+        scalable dashboards, automating manual reporting workflows, and driving business insights that support
+        data-driven decisions across cross-functional teams. I thrive on solving problems with precision,
+        delivering value through clean analytics, and aligning data solutions with real business goals.
+      </p>
+    </div>
+  </main>
+
+  <section class="circle-container">
+    <a href="skills.html" class="circle-button skills">Skills</a>
+    <a href="certifications.html" class="circle-button certifications">Certifications</a>
+    <a href="resume.html" class="circle-button resume">Resume</a>
+    <a href="contact.html" class="circle-button contact">Contact</a>
+  </section>
+</body>
+</html>

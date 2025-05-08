@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resume | Tushar Bajaj</title>
+<style>
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.03;
+  z-index: -1;
+}
+@keyframes underlineSlide {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #64b5f6;
+  animation: underlineSlide 0.8s ease forwards;
+}
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      color: #222;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: #64b5f6;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+      animation: fadeInSlide 1s ease forwards;
+    }
+
+    p, ul {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInSlide 0.8s ease forwards;
+      animation-delay: 0.3s;
+      margin-bottom: 2rem;
+    }
+
+    @keyframes fadeInSlide {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .download-btn {
+      display: inline-block;
+      background: #64b5f6;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-bottom: 2rem;
+    }
+
+    .experience h3 {
+      margin-bottom: 0.3rem;
+    }
+
+    .job-title {
+      font-weight: bold;
+      margin-top: 0.8rem;
+    }
+
+    .company-location {
+      color: #777;
+      font-size: 0.95rem;
+    }
+
+    .resume-container {
+      max-width: 1000px;
+      margin: auto;
+    }
+  
+  .logo-icon {
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
+ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  opacity: 0;
+  animation: fadeInLine 0.6s ease forwards;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #64b5f6;
+  font-size: 1.3rem;
+  top: 0;
+}
+
+@keyframes fadeInLine {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+h1, h2, .job-title {
+  opacity: 0;
+  animation: fadeInHeader 0.6s ease forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes fadeInHeader {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+</style>
+</head>
+<body>
+<div class="resume-container">
+<h1>Resume</h1>
+<a class="download-btn" download="" href="Resume_TusharBajaj.pdf">📄 Download PDF</a>
+<div class="section">
+<h2 class="animated-section">Education</h2>
+<p><strong>Pace University, New York, NY</strong><br/>
+      Master of Science in Information Systems — GPA: 3.88/4.00<br/>
+<em>Sep 2017 – May 2019</em></p>
+<p><strong>MIT College of Engineering, Pune, India</strong><br/>
+      Bachelor of Engineering in Information Technology — GPA: 3.20/4.00<br/>
+<em>Aug 2012 – Jul 2016</em></p>
+</div>
+<div class="section">
+<h2 class="animated-section">Technical Skills</h2>
+<ul>
+<li style="animation-delay: 0.20s;"><img class="logo-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/><strong>Data Analysis:</strong> SQL, Python (Pandas, NumPy, Matplotlib, Seaborn), Data Mining</li>
+<li style="animation-delay: 0.25s;"><img class="logo-icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Tableau_Logo.png"/><strong>BI &amp; Reporting Tools:</strong> Tableau, Power BI, Excel, Looker, Salesforce</li>
+<li style="animation-delay: 0.30s;"><img class="logo-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"/><strong>Cloud Platforms:</strong> AWS (Redshift, S3, Lambda, Glue)</li>
+<li style="animation-delay: 0.35s;"><img class="logo-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/><strong>Databases:</strong> MySQL, PL/SQL, SQL Server, Snowflake</li>
+<li style="animation-delay: 0.40s;"><strong>Analytics Competencies:</strong> Data Visualization, BI, ETL Automation, Dashboard Creation, Reporting</li>
+</ul>
+</div>
+<div class="section experience">
+<h2>Professional Experience</h2>
+<div class="job-title">Data Analyst — Saicon Consultants, Inc., Dallas, USA (Nov 2023 – Oct 2024)</div>
+<ul>
+<li style="animation-delay: 0.45s;">Created Tableau dashboards integrating KPIs to improve business performance by 15%</li>
+<li style="animation-delay: 0.50s;">Automated ETL processes with SQL/Excel, cutting report generation time by 40%</li>
+<li style="animation-delay: 0.55s;">Analyzed production volumes and inventory data, reducing operational waste by 20%</li>
+<li style="animation-delay: 0.60s;">Identified inefficiencies in supply metrics to reduce excess stock by 15%</li>
+</ul>
+<div class="job-title">Data &amp; Reporting Analyst — Santander Bank, N.A., Massachusetts, USA (Sep 2021 – Apr 2023)</div>
+<ul>
+<li style="animation-delay: 0.65s;">Built automated SQL/Tableau reports cutting manual work by 60% and improving accuracy</li>
+<li style="animation-delay: 0.70s;">Created investment dashboards and tracked KPIs, boosting decision-making and sales by 12%</li>
+<li style="animation-delay: 0.75s;">Performed ad hoc analysis, reduced data errors, and improved responsiveness by 20%</li>
+<li style="animation-delay: 0.80s;">Collaborated cross-functionally with finance and BI teams for strategic reporting</li>
+</ul>
+<div class="job-title">Data Analyst — MUFG Union Bank, New Jersey, USA (Jan 2020 – Sep 2021)</div>
+<ul>
+<li style="animation-delay: 0.85s;">Handled 1M+ record datasets, automating extraction and reducing processing time by 70%</li>
+<li style="animation-delay: 0.90s;">Optimized SQL queries and performed database tuning to improve system performance by 20%</li>
+<li style="animation-delay: 0.95s;">Led Salesforce dashboard development, increasing productivity and client satisfaction</li>
+<li style="animation-delay: 1.00s;">Integrated data sources using mapping logic for global financial database alignment</li>
+</ul>
+<div class="job-title">Programmer Analyst Trainee — Peri Software Solutions, New Jersey, USA (Sep 2019 – Jan 2020)</div>
+<ul>
+<li style="animation-delay: 1.05s;">Automated financial reporting in Tableau, saving 10+ hours/week in manual effort</li>
+<li style="animation-delay: 1.10s;">Built PL/SQL queries for data migration and supported early dashboard development</li>
+</ul>
+<div class="job-title">Data Analyst — Banjara Kendra Pvt. Ltd, India (Jul 2015 – Jul 2017)</div>
+<ul>
+<li style="animation-delay: 1.15s;">Developed Power BI dashboards that improved channel performance and reduced overstock by 10%</li>
+<li style="animation-delay: 1.20s;">Automated supply chain reports, helping drive 12% revenue growth for a $10M budget</li>
+<li style="animation-delay: 1.25s;">Performed sales trend analysis to improve pricing accuracy and demand forecasting</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
