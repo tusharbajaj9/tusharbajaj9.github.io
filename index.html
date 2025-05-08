@@ -95,22 +95,46 @@
       flex-wrap: wrap;
     }
     .circle-button {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-weight: bold;
-      color: #fff;
-      text-decoration: none;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.circle-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
     .circle-button:hover {
       transform: scale(1.1);
     }
+    .circle-button:hover::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  width: 130%;
+  height: 130%;
+  top: -15%;
+  left: -15%;
+  background: rgba(255, 255, 255, 0.05);
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.6; }
+  100% { transform: scale(1.05); opacity: 0; }
+}
+
     .skills { background-color: #ffb74d; }
     .certifications { background-color: #81c784; }
     .resume { background-color: #64b5f6; }
